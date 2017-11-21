@@ -1,12 +1,14 @@
 import java.util.ArrayList;
 
 public class Methods {
-	public void search(ArrayList<Person> People, String name) {
+	
+	public String search(ArrayList<Person> People, String name) {
 		for(Person bloke : People) {
 			if(bloke.getName().equals(name)) {
-				System.out.println(bloke.toString());
+				return bloke.toString();
 			}
 		}
+		return null;
 	}
 	
 	public void run() {
